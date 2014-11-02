@@ -1,0 +1,290 @@
+[ 2014-11-02T14:14:06+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/
+ERR: Syntax Error in template "./Tpl\Index\index.html"  on line 359 "{if}" missing if condition
+
+[ 2014-11-02T14:24:30+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/
+ERR: Syntax Error in template "./Tpl\Index\index.html"  on line 300 "{if}" missing if condition
+
+[ 2014-11-02T15:07:44+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "data: {&quot;id&quot;: id},"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:08:22+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "data: {&quot;id&quot;: id},"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:08:59+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:01+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:05+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:11+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "//data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:12+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "//data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:13+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "//data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:22+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "//data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:09:23+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 295 "//data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:10:28+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 296 "data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:10:57+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 296 "data: {&quot;id&quot;:id},"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2014-11-02T15:12:01+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 296 "data: {id: id},"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:14:10+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:15:22+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:15:40+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {&quot;id&quot;: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:25+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:27+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:27+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:27+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:27+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:28+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:16:28+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 294 "data = {id: id};"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2014-11-02T15:17:36+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/meicry2/meicry/index.php/Index/delImageById?id=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:meicry2
+
+[ 2014-11-02T15:17:48+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/meicry2/meicry/index.php/Index/delImageById?id=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:meicry2
+
+[ 2014-11-02T15:18:26+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/delImageById?id=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005002s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.007002s ]
+SQL: DELETE FROM `image` WHERE ( id='2' ) [ RunTime:0.015004s ]
+SQL: DELETE FROM `like` WHERE ( image_id='2' ) [ RunTime:0.018006s ]
+
+[ 2014-11-02T15:22:33+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/delImageById?id=5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.006002s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.006001s ]
+SQL: DELETE FROM `image` WHERE ( id='5' ) [ RunTime:0.024005s ]
+SQL: DELETE FROM `like` WHERE ( image_id='5' ) [ RunTime:0.009002s ]
+
+[ 2014-11-02T15:53:56+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/dianliked?id=4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:dianliked
+
+[ 2014-11-02T15:54:06+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/dianliked?id=4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:dianliked
+
+[ 2014-11-02T15:54:20+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:dianliked
+
+[ 2014-11-02T15:55:54+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/dianliked?id=4
+ERR: 无法加载模块:dianliked
+
+[ 2014-11-02T15:56:25+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/delImageById?id=4
+ERR: 无法加载模块:delImageById
+
+[ 2014-11-02T15:56:33+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/delImageById?id=4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004001s ]
+SQL: DELETE FROM `image` WHERE ( id='4' ) [ RunTime:0.025002s ]
+SQL: DELETE FROM `like` WHERE ( image_id='4' ) [ RunTime:0.008001s ]
+
+[ 2014-11-02T15:57:46+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant userId - assumed 'userId' D:\Program Files\wamp\www\meicry2\meicry\Lib\Action\IndexAction.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004000s ]
+SQL: INSERT INTO `like` (`user_id`,`update_time`) VALUES (1,'2014-11-02 15:57:46') [ RunTime:0.021002s ]
+
+[ 2014-11-02T15:58:11+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant userId - assumed 'userId' D:\Program Files\wamp\www\meicry2\meicry\Lib\Action\IndexAction.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.006001s ]
+SQL: INSERT INTO `like` (`user_id`,`update_time`) VALUES (1,'2014-11-02 15:58:11') [ RunTime:0.011001s ]
+
+[ 2014-11-02T15:59:00+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant imageId - assumed 'imageId' D:\Program Files\wamp\www\meicry2\meicry\Lib\Action\IndexAction.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004000s ]
+SQL: INSERT INTO `like` (`user_id`,`update_time`) VALUES (1,'2014-11-02 15:59:00') [ RunTime:0.024003s ]
+
+[ 2014-11-02T15:59:30+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004001s ]
+SQL: INSERT INTO `like` (`user_id`,`update_time`) VALUES (1,'2014-11-02 15:59:30') [ RunTime:0.012001s ]
+
+[ 2014-11-02T16:00:02+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.006001s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('6',1,'2014-11-02 16:00:02') [ RunTime:0.019002s ]
+
+[ 2014-11-02T16:05:56+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=8
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.005001s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('8',1,'2014-11-02 16:05:56') [ RunTime:0.022002s ]
+
+[ 2014-11-02T16:20:45+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=8
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.005000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('8',1,'2014-11-02 16:20:45') [ RunTime:0.013000s ]
+
+[ 2014-11-02T16:20:47+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.005000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('6',1,'2014-11-02 16:20:47') [ RunTime:0.024000s ]
+
+[ 2014-11-02T16:20:48+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.005000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('6',1,'2014-11-02 16:20:48') [ RunTime:0.011000s ]
+
+[ 2014-11-02T16:20:50+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.003000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('6',1,'2014-11-02 16:20:50') [ RunTime:0.009000s ]
+
+[ 2014-11-02T16:36:40+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/login
+ERR: 无法加载模块:login
+
+[ 2014-11-02T16:36:50+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/css/common.css
+ERR: 非法操作:css
+
+[ 2014-11-02T16:37:27+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/css/common.css
+ERR: 非法操作:css
+
+[ 2014-11-02T16:37:29+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/css/common.css
+ERR: 非法操作:css
+
+[ 2014-11-02T16:37:30+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/css/common.css
+ERR: 非法操作:css
+
+[ 2014-11-02T17:19:39+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=7
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004999s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('7',null,'2014-11-02 17:19:39') [ RunTime:0.017996s ]
+
+[ 2014-11-02T17:19:40+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.005999s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('6',null,'2014-11-02 17:19:40') [ RunTime:0.016996s ]
+
+[ 2014-11-02T18:16:24+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/login
+ERR: Action:_initialize您所请求的方法不存在！
+
+[ 2014-11-02T18:30:44+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=7
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('7',2,'2014-11-02 18:30:44') [ RunTime:0.017002s ]
+
+[ 2014-11-02T18:54:42+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like {if($value['imageInfo']['liked'])==1}likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown function "if"
+
+[ 2014-11-02T18:55:38+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:40+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:40+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:41+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:41+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:41+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:55:42+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt{/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:56:48+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like { if( $value['imageInfo']['liked'])==1} likedIt {/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown tag "ifclose"
+
+[ 2014-11-02T18:57:21+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like {if($value['imageInfo']['liked'])==1} likedIt {/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown function "if"
+
+[ 2014-11-02T18:59:06+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/owner?user_id=1
+ERR: Syntax Error in template "./Tpl\Index\owner.html"  on line 223 "&lt;li class=&quot;nav&quot;&gt;&lt;a href=&quot;##like&quot; class=&quot;like  js-like {if($value['imageInfo']['liked']==1)} likedIt {/if}&quot; data-id=&quot;{$value['imageInfo']['id']}&quot;&gt;点赞&lt;/a&gt;&lt;/li&gt;" unknown function "if"
+
+[ 2014-11-02T19:00:09+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Index/dianliked?id=8
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004000s ]
+SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('8',2,'2014-11-02 19:00:09') [ RunTime:0.029003s ]
+

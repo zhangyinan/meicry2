@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-10-31 23:16:03
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 19:01:51
          compiled from "./Tpl\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:319565453a772d450e6-44870550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ebdb8cf9971e5370f7097a66f3b8b0b1e1bd504' => 
     array (
       0 => './Tpl\\Index\\index.html',
-      1 => 1414768557,
+      1 => 1414926108,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5453a7731a47e',
   'variables' => 
   array (
+    'user_session_id' => 0,
     'themes' => 0,
     'theme' => 0,
     'images' => 0,
@@ -36,72 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta charset="utf-8">
 <title>首页</title>
 <link rel="stylesheet" href="http://s0.qhimg.com/static/8da31adea42c6392.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
 <script src="http://s2.qhimg.com/!827a72ed/_360so_ob_loader.js"></script>
 <script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
 <style>
 body{
-	text-align: center;
 	background-color: #ededef;
-	font-family: 'Microsoft Yahei';
 }
-.gclearfix:after{
-	clear: both;
-	content: '';
-	display: block;
-	height: 0;
-	visibility: hidden;
-	*zoom: 1;
-}
-.bd{
-	margin: 0 auto;
-	width: 928px;
-}
-header{
-	width: 100%;
-	height: 82px;
-	margin-bottom: 30px;
-	background: #000;
-	color: #fff;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: none;
-}
-.logo{
-	float: left;
-	position: relative;
-	width: 220px;
-	height: 44px;
-	margin-top: 18px;
-}
-.title{
-	position: relative;
-	color: #fff;
-	font-size: 42px;
-}
-.title:active{
-	left: 1px;
-	top: 1px;
-}
-.main-nav{
-	float: left;
-	margin-top: 22px;
-	height: 50px;
-	line-height: 50px;
-}
-.main-nav a{
-	display: inline-block;
-	font-size: 16px;
-	color: #999;
-	margin: 0 0 0 30px;
-}
-.main-nav a:hover,
-.main-nav a.nav-active{
-	color: #fff;
-}
-.slide-wrap{
+/* 轮播 */
+#mohe-meicry .slide-wrap{
 	width: 100%;
 	height: 568px;
 	margin: 0 0 30px 0;
@@ -144,129 +88,7 @@ a:hover{
 #mohe-meicry .mh-ui-img-op a.mh-ui-img-cur {
 	background-position: -16px -70px;
 }
-.sub-nav{
-	/* height: 90px; */
-	margin-bottom: 30px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-}
-.sub-nav-item{
-	display: block;
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	width: 1%;
-	text-align: center;
-}
-.sub-nav-item{
-	height: 85px;
-	margin-right: 1px;
-	background: #fff;
-	border-bottom: 5px solid #fff;
-	font-size: 20px;
-	color: #333;
-	line-height: 84px;
-	text-align: center;
-	letter-spacing: 6px;
-}
-.sub-nav-active{
-	border-bottom: 5px solid #9AC600;
-}
-.tpl-list-wrap{
-	position: relative;
-	border: 1px solid #eee;
-	background: #fff;
-	margin-bottom: 30px;
-}
-.tpl-list-wrap h3{
-	height: 59px;
-	border-bottom: 1px solid #eee;
-	line-height: 60px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #333;
-	letter-spacing: 6px;
-}
-.tpl-list-cont{
-	padding: 32px 0 0 0;
-}
-.first-view{
-	margin-left: 32px;
-}
-.tpl{
-	float: left;
-	width: 338px;
-	height: 338px;
-	margin-right: 10px;
-	overflow: hidden;
-	background: #f9f9f9;
-}
-.tpl .img-wrap {
-	display: block;
-	width: 338px;
-	height: 300px;
-	overflow: hidden;
-}
-.tpl .tpl-des{
-	height: 40px;
-	line-height: 40px;
-}
-.photo-list{
-	float: left;
-	width: 522px;
-}
-.photo-list-later{
-	margin: 5px 0 0 32px;
-	display: none;
-}
-.photo-item{
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-.photo-item a{
-	display: block;
-	position: relative;
-	width: 164px;
-	height: 164px;
-	overflow: hidden;
-}
-.photo-item .tit{
-	position: absolute;
-	left: 10px;
-	bottom: 10px;
-	height: 24px;
-	padding: 0 .6em;
-	border-radius: 5px;
-	text-align: center;
-	color: #fff;
-	line-height: 23px;
-	font-size: 14px;
-	background: #000;
-	opacity: .8;
-	filter: alpha(opacity=80);
-	z-index: 1;
-}
-.cover-all{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #5A8DCD;
-	opacity: 0;
-	z-index: 2;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.photo-item a:hover .cover-all{
-	opacity: 0.4;
-}
+/* 查看更多 */
 #mohe-meicry .mh-ui-btn-more{
 	text-align: center;
 	background: #f9f9f9;
@@ -281,27 +103,165 @@ a:hover{
 	line-height: 60px;
 	outline: 0;
 }
-.scrollUp{
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	display: none;
-	width: 48px;
-	height: 48px;
-	text-indent: -9999px;
-	cursor: pointer;
-	z-index: 10;
-	background: url('http://p5.qhimg.com/t0144c584a2fad3d11d.png') no-repeat 0 0;
+/* 二级导航 */
+#mohe-meicry .sub-nav{
+	/* height: 90px; */
+	margin-bottom: 30px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
 }
-.scrollUp:hover{
-	background-position: 0 -50px;
+#mohe-meicry .sub-nav-item{
+	display: block;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 1%;
+	text-align: center;
 }
-#footer p{
+#mohe-meicry .sub-nav-item{
+	height: 85px;
+	margin-right: 1px;
+	background: #fff;
+	border-bottom: 5px solid #fff;
+	font-size: 20px;
 	color: #333;
+	line-height: 84px;
+	text-align: center;
+	letter-spacing: 6px;
+}
+#mohe-meicry .sub-nav-active{
+	border-bottom: 5px solid #9AC600;
+}
+/* 蒙版start */
+#mohe-meicry .tpl-list-wrap{
+	position: relative;
+	border: 1px solid #eee;
+	background: #fff;
+	margin-bottom: 30px;
+}
+#mohe-meicry .tpl-list-wrap h3{
+	height: 59px;
+	border-bottom: 1px solid #eee;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 6px;
+}
+#mohe-meicry .tpl-list-cont{
+	padding: 32px 0 0 0;
+}
+#mohe-meicry .first-view{
+	margin-left: 32px;
+}
+#mohe-meicry .tpl{
+	float: left;
+	width: 338px;
+	height: 512px;
+	margin-right: 10px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+#mohe-meicry .tpl .img-wrap {
+	display: block;
+	width: 338px;
+	height: 400px;
+	overflow: hidden;
+}
+#mohe-meicry .tpl .tpl-des{
+	height: 40px;
+	line-height: 40px;
+}
+/* 照片item */
+#mohe-meicry .photo-list{
+	float: left;
+	width: 522px;
+}
+#mohe-meicry .photo-list-later{
+	margin: 5px 0 0 32px;
+	display: none;
+}
+#mohe-meicry .photo-item{
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#mohe-meicry .photo-item .img-wrap{
+	display: block;
+	width: 164px;
+	height: 164px;
+	overflow: hidden;
+}
+#mohe-meicry .photo-item a.tit{
+	position: absolute;
+	left: 6px;
+	bottom: 10px;
+	width: 60px;
+	height: 24px;
+	padding: 0 .6em;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	line-height: 23px;
+	font-size: 14px;
+	background: #000;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	z-index: 1;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#mohe-meicry .like{
+	position: absolute;
+	right: 3px;
+	bottom: 10px;
+	width: 26px;
+	height: 23px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: url('__PUBLIC__/img/like.png') no-repeat left center;
+	background-size: 20px;
+}
+#mohe-meicry .like:hover,
+#mohe-meicry .likedIt{
+	background: url('__PUBLIC__/img/liked.png') no-repeat left center;
+	background-size: 20px;
+}
+.cover-all-wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.cover-mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.8;
+}
+.cover-cont{
+	z-index: 10;
+	position: fixed;
+	top: 10px;
+	width: 723px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 </style>
 </head>
-<body link="#0000cc">
+<body>
 <div id="mohe-meicry">
 	<header class="gclearfix">
 		<div class="bd gclearfix">
@@ -310,13 +270,13 @@ a:hover{
 			</h2>
 			<nav class="main-nav">
 				<a href="##" class="nav-item nav-active">首页</a>
-				<a href="##" class="nav-item">个人主页</a>
-				<a href="##" class="nav-item">xx</a>
+				<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_session_id']->value;?>
+" class="nav-item" target="_blank">个人主页</a>
+				<a href="##" class="nav-item">xxxx</a>
 			</nav>
 		</div>
 	</header>
 	<div class="slide-wrap">
-		<!-- start: onebox内容 -->
 		<div class="mh-ui-img-slide bd">
 			<ul>
 				<li class="mh-ui-img-cur">
@@ -341,7 +301,6 @@ a:hover{
 				<a href="###slide" target="_self" class=""></a>
 			</div>					
 		</div>
-		<!-- end: onebox内容 -->
 	</div>
 	
 	<nav class="sub-nav bd">
@@ -350,12 +309,12 @@ a:hover{
 foreach ($_from as $_smarty_tpl->tpl_vars['theme']->key => $_smarty_tpl->tpl_vars['theme']->value){
 $_smarty_tpl->tpl_vars['theme']->_loop = true;
 ?>
-		<a href="##" class="sub-nav-item  <?php if ($_smarty_tpl->tpl_vars['theme']->value['id']==1){?>sub-nav-active<?php }?>" data-target="<?php echo $_smarty_tpl->tpl_vars['theme']->value['id'];?>
+		<a href="##" class="sub-nav-item  js-sub-nav-item  <?php if ($_smarty_tpl->tpl_vars['theme']->value['id']==1){?>sub-nav-active<?php }?>" data-target="<?php echo $_smarty_tpl->tpl_vars['theme']->value['id'];?>
 " ><?php echo $_smarty_tpl->tpl_vars['theme']->value['name'];?>
 </a>
-		
 	<?php } ?>	
 	</nav>
+
 	<?php  $_smarty_tpl->tpl_vars['theme'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['theme']->_loop = false;
  $_smarty_tpl->tpl_vars['themeId'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['images']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -363,7 +322,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['theme']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['theme']->_loop = true;
  $_smarty_tpl->tpl_vars['themeId']->value = $_smarty_tpl->tpl_vars['theme']->key;
 ?>
-	<div class="tpl-list-wrap bd" data-target="<?php echo $_smarty_tpl->tpl_vars['themeId']->value;?>
+	<div class="tpl-list-wrap bd js-tpl-list" data-target="<?php echo $_smarty_tpl->tpl_vars['themeId']->value;?>
 " <?php if ($_smarty_tpl->tpl_vars['themeId']->value==1){?>style="display: block;"<?php }else{ ?>style="display: none;"<?php }?>>
 		<?php  $_smarty_tpl->tpl_vars['template'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['template']->_loop = false;
  $_smarty_tpl->tpl_vars['templateId'] = new Smarty_Variable;
@@ -379,49 +338,64 @@ $_smarty_tpl->tpl_vars['template']->_loop = true;
 				<div class="tpl">
 					<a href="##" target="_blank" class="img-wrap">
 						<img src="__PUBLIC__/img/template/<?php echo $_smarty_tpl->tpl_vars['templates']->value[$_smarty_tpl->tpl_vars['templateId']->value]['logo'];?>
-" width="320" height="320">
+" width="320" height="400">
 					</a>
 					<p class="tpl-des"><?php echo $_smarty_tpl->tpl_vars['templates']->value[$_smarty_tpl->tpl_vars['templateId']->value]['name'];?>
 </p>
 				</div>
+				
 				<ul class="photo-list">
 				 <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['template']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['image']->index=-1;
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value){
 $_smarty_tpl->tpl_vars['image']->_loop = true;
+ $_smarty_tpl->tpl_vars['image']->index++;
 ?>
+				 <?php if ($_smarty_tpl->tpl_vars['image']->index>5){?><?php break 1?><?php }?>
 					<li class="photo-item">
-						<a href="###" target="_blank">
+						<a href="###">
 							<img src="__PUBLIC__/img/uploads/<?php echo $_smarty_tpl->tpl_vars['image']->value['image_url'];?>
-" width="164" height="164">
-							<span class="tit"><?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['name'];?>
-</span>
-							<span class="cover-all"></span>	
+" width="164" height="164" class="js-img">
 						</a>
+						<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['id'];?>
+" class="tit" target="_blank"><?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['name'];?>
+</a>
+						<!--只有登录的了用户才可以看到点赞的标志-->
+						<!--点赞加1时，就记录已被该用户喜欢了-->
+						<!--下一次加载时需要读状态，当前用户是不是已经喜欢了-->
+						<a href="##like" class="like <?php if ($_smarty_tpl->tpl_vars['image']->value['liked']==1){?> likedIt <?php }?>"  data-id='<?php echo $_smarty_tpl->tpl_vars['image']->value['id'];?>
+'></a>
 					</li>
 				<?php } ?>
 				</ul>
 			</div>
 			<ul class="photo-list-later gclearfix">
 			 	<?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['images']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = $_smarty_tpl->tpl_vars['template']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['image']->index=-1;
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value){
 $_smarty_tpl->tpl_vars['image']->_loop = true;
+ $_smarty_tpl->tpl_vars['image']->index++;
 ?>
-				<li class="photo-item">
-					<a href="###" target="_blank">
-						<img src="__PUBLIC__/img/uploads/<?php echo $_smarty_tpl->tpl_vars['image']->value['image_url'];?>
-" width="164" height="164">
-						<span class="tit"><?php echo $_smarty_tpl->tpl_vars['image']->value['image_desc'];?>
-</span>
-						<span class="cover-all"></span>	
-					</a>
-				</li>
+				<?php if ($_smarty_tpl->tpl_vars['image']->index>=5){?>
+					<li class="photo-item">
+						<a href="###">
+							<img src="__PUBLIC__/img/uploads/<?php echo $_smarty_tpl->tpl_vars['image']->value['image_url'];?>
+" width="164" height="164" class="js-img">
+						</a>
+						<a href="##用户id" class="tit" target="_blank"><?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['name'];?>
+</a>
+						<a href="##like" class="like"></a>
+					</li>
+				<?php }?>
 				<?php } ?>
 			</ul>
+			<?php if (count($_smarty_tpl->tpl_vars['template']->value)>6){?>
 			<div class="mh-ui-btn-more">
 				<a href="##"><span class="mh-ui-btn-txt" data-html="更多照片&gt;&gt;">更多照片&gt;&gt;</span></a>		
 			</div>
+			<?php }?>
 		</div>
 	<?php } ?>
 	</div>
@@ -429,7 +403,13 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 <?php } ?>
 	<div id="footer">
 		<a class="scrollUp">返回顶部</a>
-		<p>Copyright&copy;Meicry</p>
+		<p>Copyright&copy;五碗牛肉面</p>
+	</div>
+	<div class="cover-all-wrap js-cover-all-wrap">
+		<div class="cover-cont js-cover-cont">
+			<img src="" class="img-big"/>
+		</div>
+		<div class="cover-mask"></div>
 	</div>
 </div>
 </body>
@@ -490,29 +470,70 @@ _loader.use('jquery',function(){
 			}
 		});
 
-		//返回顶部
-		var elem = $(".scrollUp"),
-			height = $(window).height(),
-			scrollTimer = null;
-		
-		$(window).on("scroll", function () {
-			if(scrollTimer){
-				clearTimeout(scrollTimer);
+		//点赞
+		$('.like', $context).on('click',function(e){
+			e.preventDefault();
+
+			var id = $(this).data('id'),
+			that = $(this);
+			
+			if(!$(this).hasClass('likedIt')){
+				$.ajax({
+					 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+					 success: function(){
+					    that.addClass('likedIt');
+					}
+				});
+			}else{
+				return;
 			}
-			scrollTimer = setTimeout(function(){
-				var top = $(document).scrollTop();
-				
-				if(top > 300){
-					elem.show();
-				}else{
-					elem.hide();
-				}
-			},200);
 		});
-		//定义返回顶部点击向上滚动的动画
-		$(".scrollUp").click(function(){
-			console.log($('html, body'));
-			$('html, body').animate({scrollTop:0},200);
+
+		//sub-nav切换
+		$('.js-sub-nav-item').on('click',function(){
+			var subNavs =  $('.js-sub-nav-item'),
+				tpls = $('.js-tpl-list'),
+				index = $(this).index();
+			subNavs.removeClass('sub-nav-active');
+			tpls.hide();
+
+			$(this).addClass('sub-nav-active');
+			tpls.eq(index).show();
+		});
+
+		//放大图
+		var $cover = $('.js-cover-all-wrap',$context),
+			$coverCont = $('.js-cover-cont',$context);
+
+		function computWH(){
+			var clientWidth = $(window).width() > document.body.clientWidth ? $(window).width() : document.body.clientWidth,
+				clientHeight = $(window).height() > document.body.clientHeight ? $(window).height() : document.body.clientHeight;
+			var contLeft = (clientWidth - 723) / 2;
+			$cover.css({
+					"width" :clientWidth,
+					"height" : clientHeight
+				});
+			$coverCont.css({
+					"left" :contLeft
+				});
+			$('img',$coverCont).css({
+					"height": $(window).height()-50
+				});
+		}
+		computWH();
+
+		$('.js-img').on('click',function(e){
+			e.preventDefault();
+			var smallsrc = $(this).attr('src');
+
+			$('img',$coverCont).attr('src',smallsrc);
+			var imgH = $('img',$coverCont).height();
+			computWH(imgH);
+			$cover.show();
+			$(window).on('resize',computWH);
+		});
+		$cover.on('click',function(){
+			$cover.hide();
 		});
 });
 

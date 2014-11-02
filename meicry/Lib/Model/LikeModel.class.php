@@ -3,7 +3,7 @@ class LikeModel extends Model {
 	# 点赞加1
 	function dianlike($id, $imageId) {
 		$data 					= array();
-		$data['image'] 			= $imageId;
+		$data['image_id'] 			= $imageId;
 		$data['user_id'] 		= $id;
 		$data['update_time'] 	= date("Y-m-d H:i:s", time());
 		$this->add($data);
@@ -18,4 +18,10 @@ class LikeModel extends Model {
 		$ret = $this->where("user_id='$userId'")->order('update_time desc')->select();
 		return $ret;
 	}
+
+	function getLikedStatus($userId, $imageId) {
+		$res = $this->where("user_id='$userId' and image_id = '$imageId'")->select();
+		return empty($res) ? 0 : 1;
+	}
+
 }

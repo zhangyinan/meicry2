@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-10-31 23:21:04
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 18:59:54
          compiled from "./Tpl\Index\owner.html" */ ?>
 <?php /*%%SmartyHeaderCode:196365453a7c7ad0265-43826280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9e5156e048b348dc6de1ff995c6c83191b5f916a' => 
     array (
       0 => './Tpl\\Index\\owner.html',
-      1 => 1414768855,
+      1 => 1414925992,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5453a7c7cdf7e',
   'variables' => 
   array (
+    'user_info_session' => 0,
     'user_info' => 0,
     'image_info' => 0,
     'value' => 0,
@@ -34,6 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script src="http://s2.qhimg.com/!827a72ed/_360so_ob_loader.js"></script>
 <script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
 <style>
+body{
+	background: #dce9e7;
+}
 .back{
 	position: absolute;
 	right: 20px;
@@ -50,9 +54,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	width: 600px;
 	margin: 0 auto;
 }
-#owner{
-	background: #dce9e7;
-}
 .aside{
 	position: fixed;
 	top: 0;
@@ -63,6 +64,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 }
 .aside .nav,
 .post-info .nav{
+	display: block;
 	width: 60px;
 	height: 60px;
 	background: #fff;
@@ -96,7 +98,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	width: 60px;
 }
 .post-info .nav{
-	background: yellow;
+	background: #C3F0C7;
+	border: 1px solid #999;
+	text-align: center;
 }
 .post-bd{
 	float: right;
@@ -110,8 +114,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	overflow: hidden;
 }
 .post-info .nav-small{
-	width: 40px;
-	height: 40px;
+	display: block;
+	width: 50px;
+	height: 50px;
 }
 .post-bd p{
 	text-align: left;
@@ -128,13 +133,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	margin-right: 5px;
 	text-align: center;
 }
-.post-bd .photo-share{
+.post-bd .photo-del{
 	float: right;
 }
-.post-bd a.photo-share{
+.post-bd a.photo-del{
 	color: #666;
 }
-.post-bd a.photo-share:hover{
+.post-bd a.photo-del:hover{
 	color: #7594b3;
 }
 .cover-all-wrap{
@@ -154,18 +159,66 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 }
 .cover-cont{
 	z-index: 10;
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: 10px;
 	width: 723px;
 	overflow: hidden;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.img-big-info{
-	width: 100%;
-	height: 100px;
-	background: yellow;
+.share{
+	position: relative;
+}
+.share:hover .share-icons-wrap{
+	display: block;
+}
+.share-icons-wrap{
+	display: none;
+}
+.share-icon{
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin-bottom: 10px;
+	text-indent: -9999px;
+	background: url('__PUBLIC__/img/icons24.png') no-repeat 0 0;
+}
+.share-wx{
+
+}
+.share-weibo{
+	top: 50px;
+	background-position: -200px 0;
+}
+.share-qzone{
+	top: 100px;
+	background-position: -300px 0;
+}
+.share-wx:hover{
+	background-position: 0px -89px;
+}
+.share-weibo:hover{
+	background-position: -200px -89px;
+}
+.share-qzone:hover{
+	background-position: -300px -89px;
+}
+.like{
+	display: block;
+	width: 40px;
+	height: 40px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: url('__PUBLIC__/img/like.png') no-repeat left center;
+	background-size: 40px;
+}
+.like:hover,
+.likedIt{
+	background: url('__PUBLIC__/img/liked.png') no-repeat left center;
+	background-size: 40px;
 }
 </style>
 </head>
@@ -173,12 +226,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div id="owner">
 	<div class="aside">
 		<div class="nav">
-			<img src="__PUBLIC__/img/user/<?php echo $_smarty_tpl->tpl_vars['user_info']->value['icon'];?>
-" />
+			<a href="__APP__/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_info_session']->value['id'];?>
+"><img src="__PUBLIC__/img/user/<?php echo $_smarty_tpl->tpl_vars['user_info_session']->value['icon'];?>
+" /></a>
 		</div>
-		<div class="nav">
+		<a href="__APP__/Index/getImageLiked" class="nav">
 			赞过的照片
-		</div>
+		</a>
 		<div class="nav">
 			个人设置
 		</div>
@@ -186,7 +240,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			主题投稿
 		</div>
 	</div>
-	<a href="##home" class="back">返回首页</a>
+	<a href="http://127.0.0.1/meicry2/meicry/" class="back">返回首页</a>
 	<div class="top owner-bd">
 		<h1><?php echo $_smarty_tpl->tpl_vars['user_info']->value['name'];?>
 </h1>
@@ -199,26 +253,37 @@ foreach ($_from as $_smarty_tpl->tpl_vars['value']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['value']->_loop = true;
 ?>
 			<li class="post-item gclearfix">
-				<div class="post-info">
-					<div class="nav">点赞</div>
-					<div class="nav nav-small">分享</div>
-				</div>
+				<ul class="post-info">
+
+					<li class="nav"><a href="##like" class="like  js-like <?php if ($_smarty_tpl->tpl_vars['value']->value['imageInfo']['liked']==1){?> likedIt <?php }?>" data-id="<?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['id'];?>
+">点赞</a></li>
+
+					<li class="share js-share">
+						<a href="##share" class="nav nav-small">分享</a>
+							
+						<ul class="share-icons-wrap js-share-icons-wrap">
+							<li><a herf="##" target="_blank" class="share-icon share-wx js-wx">微信</a></li>
+							<li><a herf="##" target="_blank" class="share-icon share-weibo js-weibo">新浪微博</a></li>
+							<li><a herf="##" target="_blank" class="share-icon share-qzone js-qzone">qq空间</a></li>
+						</ul>
+					</li>
+				</ul>
+
 				<div class="post-bd">
 					<a href="####" target="_blank" class="img-wrap">
 						<img src="__PUBLIC__/img/uploads/<?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['image_url'];?>
 " width="556" class="js-img"/>
 					</a>
 					<p class="gclearfix">
-						<span class="theme-info photo-tips"><?php echo $_smarty_tpl->tpl_vars['value']->value['themeInfo']['name'];?>
+						<span class="theme-info "><?php echo $_smarty_tpl->tpl_vars['value']->value['themeInfo']['name'];?>
 </span>
-						<span class="photo-tips"><?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['updated_at'];?>
+						<span class="theme-info "><?php echo $_smarty_tpl->tpl_vars['value']->value['userInfo']['name'];?>
 </span>
-						<span><a href="##share" class="photo-share photo-tips" data-id="<?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['id'];?>
+						<span class=""><?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['updated_at'];?>
+</span>
+						<span><a href="##del" class="photo-del js-del" data-id="<?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['id'];?>
 "> 删除</a></span>
 					</p>
-				</div>
-				<div class="share-cont">
-					
 				</div>
 			</li>
 		<?php } ?>
@@ -232,7 +297,7 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 	</div>
 	<div class="cover-all-wrap js-cover-all-wrap">
 		<div class="cover-cont js-cover-cont">
-			<img src="__PUBLIC__/img/uploads/photo1.png" class="img-big"/>
+			<img src="" class="img-big"/>
 		</div>
 		<div class="cover-mask"></div>
 	</div>
@@ -256,16 +321,64 @@ _loader.use('jquery, scrollUp',function(){
 		$coverCont.css({
 				"left" :contLeft
 			});
+		$('img',$coverCont).css({
+				"height": $(window).height()-50
+			});
 	}
 	computWH();
+
 	$('.js-img').on('click',function(e){
 		e.preventDefault();
-		computWH();
+		var smallsrc = $(this).attr('src');
+
+		$('img',$coverCont).attr('src',smallsrc);
+		var imgH = $('img',$coverCont).height();
+		computWH(imgH);
 		$cover.show();
 		$(window).on('resize',computWH);
 	});
 	$cover.on('click',function(){
 		$cover.hide();
+	});
+
+
+	$('.js-share').hover(function(){
+		$('.js-share-icons-wrap').fadeIn('10000').css("display", "block");;
+	},function(){
+		$('.js-share-icons-wrap').fadeOut('5000').hide(); 
+	});
+
+	$('.js-del').on('click',function(e){
+		e.preventDefault();
+
+		var id = $(this).data('id'),
+			that = $(this);
+
+		$.ajax({
+			 url: "delImageById?id="+id,
+			 success: function(){
+			    that.parents('.post-item').remove();
+			}
+		});
+	});
+
+	//点赞
+	$('.js-like', $context).on('click',function(e){
+		e.preventDefault();
+
+		var id = $(this).data('id'),
+		that = $(this);
+		
+		if(!$(this).hasClass('likedIt')){
+			$.ajax({
+				 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+				 success: function(){
+				    that.addClass('likedIt');
+				}
+			});
+		}else{
+			return;
+		}
 	});
 });
 </script>

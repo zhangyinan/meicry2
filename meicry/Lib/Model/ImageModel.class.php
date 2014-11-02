@@ -15,26 +15,17 @@ class ImageModel extends Model {
 	public function getImageByTemplateId($templateId)  {
 		# return array(0=>array('id'=>1,'name'=>'test'));
 		$ret=$this->where("template='$templateId'")->select();
-		
+		$ret = $this->addLikedStatus($ret);
 		return  $ret;
 	}
 	# 根据用户id找到所有相关的图片
 	public function getImageByUserId($userId) {
 // 		$res = $this->query("select * from image i left join template t on  t.id=i.template left join theme th on th.id= t.theme where image.user_id='$userId'");
-		$res1 = $this->getItemByUserId($userId);
-		$allImage = array();
-		$templateModel = new TemplateModel();
-		$themeModel = new ThemeModel();
-		foreach($res1 as $template) {
-			$templateId = $template['template'];
-			$themeId = $templateModel->getThemeByTemplateId($templateId);
-			$themeInfo = $themeModel->getThemeInfoByThemeId($themeId);
-			$tmp = array();
-			$tmp['imageInfo'] = $template;
-			$tmp['themeInfo'] = $themeInfo;
-			$allImage[] = $tmp;
-		}
-		return $allImage;
+		$ret = $this->getItemByUserId($userId);
+
+		$ret = $this->addLikedStatus($ret);
+
+		return $ret;
 	}
 	#删除图片byid
 	public  function delImageById($id){
@@ -43,6 +34,14 @@ class ImageModel extends Model {
 	
 	public  function getImageInfoById($imageId){
 		$ret = $this->find($imageId);
+		return $ret;
+	}
+
+	private function addLikedStatus(array $ret) {
+		$likeModel = new LikeModel();
+		foreach ($ret as &$value) {
+			$value['liked'] = $likeModel->getLikedStatus($_SESSION['user_id'], $value['id']);
+		}
 		return $ret;
 	}
 }

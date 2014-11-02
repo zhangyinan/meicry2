@@ -1,19 +1,25 @@
 <?php
-class IndexAction extends Action {
+class IndexAction extends CommonAction {
+
+    public function _initialize() {
+        parent::_initialize();
+    }
+
     public function index(){
     	
     	$all_user= $this->getAllUser();
 	    $ret = $this->getAllImage();
 	    $all_theme = $this->getAllTheme();
 		$all_template =$this->getAllTemplate();
-		$_SESSION["user_id"] = 1;
-		
+
+        $this->assign('user_session_id',   $_SESSION["user_id"]);
 		$this->assign('user_info',   $all_user);
 		$this->assign('templates',   $all_template);
 		$this->assign('themes',   $all_theme);
 		$this->assign('images',   $ret);
 		$this->display();
     }
+
     private  function getAllUser(){
     	$Obj = new UserModel();
     	$res =$Obj->getAllUser();
@@ -76,10 +82,21 @@ class IndexAction extends Action {
     	
     	return $tmplateArr;
     }
-    
+    #like+1   
+    public function dianliked(){
+        $userId = $_SESSION["user_id"];
+        $imageId = $_REQUEST['id'];
+       dump($imageId);
+        $obj = new LikeModel();
+        $obj->dianlike( $userId,$imageId);
+      
+        echo 1;
+        exit;
+    }   
+
     #删除图片	
     public function delImageById(){
-    	$imageId = $_REQUEST['imageId'];
+    	$imageId = $_REQUEST['id'];
     	$obj = new ImageModel();
     	$obj1 = new LikeModel();
     	$obj->delImageById($imageId);
@@ -90,12 +107,31 @@ class IndexAction extends Action {
     #个人主页
     public  function owner(){
     	$userId = $_REQUEST["user_id"];
-    	$obj = new ImageModel();
-    	$ret = $obj->getImageByUserId($userId);
-    	$obj1 = new UserModel();
-    	$res = $obj1->getUserInfoById($userId);
-    	$this->assign("user_info",$res);
-    	$this->assign("image_info",$ret);
+        $userId_session = $_SESSION["user_id"];
+        $obj1 = new UserModel();
+        $res_session = $obj1->getUserInfoById($userId_session);//
+        $res = $obj1->getUserInfoById($userId);
+
+        $obj = new ImageModel();
+        $ret = $obj->getImageByUserId($userId);
+        $allImage = array();
+        $templateModel = new TemplateModel();
+        $themeModel = new ThemeModel();
+        foreach($ret as $template) {
+            $templateId = $template['template'];
+            $themeId = $templateModel->getThemeByTemplateId($templateId);
+            $themeInfo = $themeModel->getThemeInfoByThemeId($themeId);
+            $tmp = array();
+            $tmp['imageInfo'] = $template;
+            $tmp['themeInfo'] = $themeInfo;
+            $tmp['userInfo'] = $res;
+            $allImage[] = $tmp;
+        }
+
+        $this->assign("sessionId",$userId_session);
+    	$this->assign("user_info_session",$res_session);
+        $this->assign("user_info",$res);
+    	$this->assign("image_info",$allImage);
     	$this->display();
     }
     
@@ -118,6 +154,7 @@ class IndexAction extends Action {
     		$allLikedTmp = array();
     		$tmpId = $imageInfo['template'];
     		$allLikedTmp["imageInfo"] = $imageInfo;
+            $allLikedTmp["imageInfo"]['liked'] = 1;
     		$allLikedTmp["userInfo"] = $userInfo;
     		$templateInfo = $obj3->getThemeByTemplateId($tmpId);
     		$themeId = $templateInfo['theme'];
@@ -126,7 +163,7 @@ class IndexAction extends Action {
     	}
     	$obj1 = new UserModel();
     	$ress = $obj1->getUserInfoById($userId);
-		$this->assign("user_info",$ress);
+		$this->assign("user_info_session",$ress);
     	$this->assign("image_info",$allLiked);
     	$this->display("owner");
     }

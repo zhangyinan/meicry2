@@ -3,72 +3,15 @@
 <meta charset="utf-8">
 <title>首页</title>
 <link rel="stylesheet" href="http://s0.qhimg.com/static/8da31adea42c6392.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
 <script src="http://s2.qhimg.com/!827a72ed/_360so_ob_loader.js"></script>
 <script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
 <style>
 body{
-	text-align: center;
 	background-color: #ededef;
-	font-family: 'Microsoft Yahei';
 }
-.gclearfix:after{
-	clear: both;
-	content: '';
-	display: block;
-	height: 0;
-	visibility: hidden;
-	*zoom: 1;
-}
-.bd{
-	margin: 0 auto;
-	width: 928px;
-}
-header{
-	width: 100%;
-	height: 82px;
-	margin-bottom: 30px;
-	background: #000;
-	color: #fff;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: none;
-}
-.logo{
-	float: left;
-	position: relative;
-	width: 220px;
-	height: 44px;
-	margin-top: 18px;
-}
-.title{
-	position: relative;
-	color: #fff;
-	font-size: 42px;
-}
-.title:active{
-	left: 1px;
-	top: 1px;
-}
-.main-nav{
-	float: left;
-	margin-top: 22px;
-	height: 50px;
-	line-height: 50px;
-}
-.main-nav a{
-	display: inline-block;
-	font-size: 16px;
-	color: #999;
-	margin: 0 0 0 30px;
-}
-.main-nav a:hover,
-.main-nav a.nav-active{
-	color: #fff;
-}
-.slide-wrap{
+/* 轮播 */
+#mohe-meicry .slide-wrap{
 	width: 100%;
 	height: 568px;
 	margin: 0 0 30px 0;
@@ -111,129 +54,7 @@ a:hover{
 #mohe-meicry .mh-ui-img-op a.mh-ui-img-cur {
 	background-position: -16px -70px;
 }
-.sub-nav{
-	/* height: 90px; */
-	margin-bottom: 30px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-}
-.sub-nav-item{
-	display: block;
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	width: 1%;
-	text-align: center;
-}
-.sub-nav-item{
-	height: 85px;
-	margin-right: 1px;
-	background: #fff;
-	border-bottom: 5px solid #fff;
-	font-size: 20px;
-	color: #333;
-	line-height: 84px;
-	text-align: center;
-	letter-spacing: 6px;
-}
-.sub-nav-active{
-	border-bottom: 5px solid #9AC600;
-}
-.tpl-list-wrap{
-	position: relative;
-	border: 1px solid #eee;
-	background: #fff;
-	margin-bottom: 30px;
-}
-.tpl-list-wrap h3{
-	height: 59px;
-	border-bottom: 1px solid #eee;
-	line-height: 60px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #333;
-	letter-spacing: 6px;
-}
-.tpl-list-cont{
-	padding: 32px 0 0 0;
-}
-.first-view{
-	margin-left: 32px;
-}
-.tpl{
-	float: left;
-	width: 338px;
-	height: 338px;
-	margin-right: 10px;
-	overflow: hidden;
-	background: #f9f9f9;
-}
-.tpl .img-wrap {
-	display: block;
-	width: 338px;
-	height: 300px;
-	overflow: hidden;
-}
-.tpl .tpl-des{
-	height: 40px;
-	line-height: 40px;
-}
-.photo-list{
-	float: left;
-	width: 522px;
-}
-.photo-list-later{
-	margin: 5px 0 0 32px;
-	display: none;
-}
-.photo-item{
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-.photo-item a{
-	display: block;
-	position: relative;
-	width: 164px;
-	height: 164px;
-	overflow: hidden;
-}
-.photo-item .tit{
-	position: absolute;
-	left: 10px;
-	bottom: 10px;
-	height: 24px;
-	padding: 0 .6em;
-	border-radius: 5px;
-	text-align: center;
-	color: #fff;
-	line-height: 23px;
-	font-size: 14px;
-	background: #000;
-	opacity: .8;
-	filter: alpha(opacity=80);
-	z-index: 1;
-}
-.cover-all{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #5A8DCD;
-	opacity: 0;
-	z-index: 2;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.photo-item a:hover .cover-all{
-	opacity: 0.4;
-}
+/* 查看更多 */
 #mohe-meicry .mh-ui-btn-more{
 	text-align: center;
 	background: #f9f9f9;
@@ -248,27 +69,165 @@ a:hover{
 	line-height: 60px;
 	outline: 0;
 }
-.scrollUp{
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	display: none;
-	width: 48px;
-	height: 48px;
-	text-indent: -9999px;
-	cursor: pointer;
-	z-index: 10;
-	background: url('http://p5.qhimg.com/t0144c584a2fad3d11d.png') no-repeat 0 0;
+/* 二级导航 */
+#mohe-meicry .sub-nav{
+	/* height: 90px; */
+	margin-bottom: 30px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
 }
-.scrollUp:hover{
-	background-position: 0 -50px;
+#mohe-meicry .sub-nav-item{
+	display: block;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 1%;
+	text-align: center;
 }
-#footer p{
+#mohe-meicry .sub-nav-item{
+	height: 85px;
+	margin-right: 1px;
+	background: #fff;
+	border-bottom: 5px solid #fff;
+	font-size: 20px;
 	color: #333;
+	line-height: 84px;
+	text-align: center;
+	letter-spacing: 6px;
+}
+#mohe-meicry .sub-nav-active{
+	border-bottom: 5px solid #9AC600;
+}
+/* 蒙版start */
+#mohe-meicry .tpl-list-wrap{
+	position: relative;
+	border: 1px solid #eee;
+	background: #fff;
+	margin-bottom: 30px;
+}
+#mohe-meicry .tpl-list-wrap h3{
+	height: 59px;
+	border-bottom: 1px solid #eee;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 6px;
+}
+#mohe-meicry .tpl-list-cont{
+	padding: 32px 0 0 0;
+}
+#mohe-meicry .first-view{
+	margin-left: 32px;
+}
+#mohe-meicry .tpl{
+	float: left;
+	width: 338px;
+	height: 512px;
+	margin-right: 10px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+#mohe-meicry .tpl .img-wrap {
+	display: block;
+	width: 338px;
+	height: 400px;
+	overflow: hidden;
+}
+#mohe-meicry .tpl .tpl-des{
+	height: 40px;
+	line-height: 40px;
+}
+/* 照片item */
+#mohe-meicry .photo-list{
+	float: left;
+	width: 522px;
+}
+#mohe-meicry .photo-list-later{
+	margin: 5px 0 0 32px;
+	display: none;
+}
+#mohe-meicry .photo-item{
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#mohe-meicry .photo-item .img-wrap{
+	display: block;
+	width: 164px;
+	height: 164px;
+	overflow: hidden;
+}
+#mohe-meicry .photo-item a.tit{
+	position: absolute;
+	left: 6px;
+	bottom: 10px;
+	width: 60px;
+	height: 24px;
+	padding: 0 .6em;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	line-height: 23px;
+	font-size: 14px;
+	background: #000;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	z-index: 1;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#mohe-meicry .like{
+	position: absolute;
+	right: 3px;
+	bottom: 10px;
+	width: 26px;
+	height: 23px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: url('__PUBLIC__/img/like.png') no-repeat left center;
+	background-size: 20px;
+}
+#mohe-meicry .like:hover,
+#mohe-meicry .likedIt{
+	background: url('__PUBLIC__/img/liked.png') no-repeat left center;
+	background-size: 20px;
+}
+.cover-all-wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.cover-mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.8;
+}
+.cover-cont{
+	z-index: 10;
+	position: fixed;
+	top: 10px;
+	width: 723px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 </style>
 </head>
-<body link="#0000cc">
+<body>
 <div id="mohe-meicry">
 	<header class="gclearfix">
 		<div class="bd gclearfix">
@@ -277,13 +236,12 @@ a:hover{
 			</h2>
 			<nav class="main-nav">
 				<a href="##" class="nav-item nav-active">首页</a>
-				<a href="##" class="nav-item">个人主页</a>
-				<a href="##" class="nav-item">xx</a>
+				<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id={$user_session_id}" class="nav-item" target="_blank">个人主页</a>
+				<a href="##" class="nav-item">xxxx</a>
 			</nav>
 		</div>
 	</header>
 	<div class="slide-wrap">
-		<!-- start: onebox内容 -->
 		<div class="mh-ui-img-slide bd">
 			<ul>
 				<li class="mh-ui-img-cur">
@@ -308,53 +266,61 @@ a:hover{
 				<a href="###slide" target="_self" class=""></a>
 			</div>					
 		</div>
-		<!-- end: onebox内容 -->
 	</div>
 	
 	<nav class="sub-nav bd">
 	 {foreach $themes as $theme}
-		<a href="##" class="sub-nav-item  {if $theme.id ==1}sub-nav-active{/if}" data-target="{$theme.id}" >{$theme.name}</a>
-		
+		<a href="##" class="sub-nav-item  js-sub-nav-item  {if $theme.id ==1}sub-nav-active{/if}" data-target="{$theme.id}" >{$theme.name}</a>
 	{/foreach}	
 	</nav>
+
 	{foreach $images as $themeId => $theme}
-	<div class="tpl-list-wrap bd" data-target="{$themeId}" {if $themeId == 1}style="display: block;"{else}style="display: none;"{/if}>
+	<div class="tpl-list-wrap bd js-tpl-list" data-target="{$themeId}" {if $themeId == 1}style="display: block;"{else}style="display: none;"{/if}>
 		{foreach $theme as $templateId => $template}
 		<h3>{$templates[$templateId]['name']}</h3>
 		<div class="tpl-list-cont">
 			<div class="first-view gclearfix">
 				<div class="tpl">
 					<a href="##" target="_blank" class="img-wrap">
-						<img src="__PUBLIC__/img/template/{$templates[$templateId]['logo']}" width="320" height="320">
+						<img src="__PUBLIC__/img/template/{$templates[$templateId]['logo']}" width="320" height="400">
 					</a>
 					<p class="tpl-des">{$templates[$templateId]['name']}</p>
 				</div>
+				
 				<ul class="photo-list">
 				 {foreach $template as $image}
+				 {if $image@index > 5}{break}{/if}
 					<li class="photo-item">
-						<a href="###" target="_blank">
-							<img src="__PUBLIC__/img/uploads/{$image.image_url}" width="164" height="164">
-							<span class="tit">{$user_info[$image.user_id]['name']}</span>
-							<span class="cover-all"></span>	
+						<a href="###">
+							<img src="__PUBLIC__/img/uploads/{$image.image_url}" width="164" height="164" class="js-img">
 						</a>
+						<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id={$user_info[$image.user_id]['id']}" class="tit" target="_blank">{$user_info[$image.user_id]['name']}</a>
+						<!--只有登录的了用户才可以看到点赞的标志-->
+						<!--点赞加1时，就记录已被该用户喜欢了-->
+						<!--下一次加载时需要读状态，当前用户是不是已经喜欢了-->
+						<a href="##like" class="like {if $image.liked==1 } likedIt {/if}"  data-id='{$image.id}'></a>
 					</li>
 				{/foreach}
 				</ul>
 			</div>
 			<ul class="photo-list-later gclearfix">
-			 	{foreach $images as $image}
-				<li class="photo-item">
-					<a href="###" target="_blank">
-						<img src="__PUBLIC__/img/uploads/{$image.image_url}" width="164" height="164">
-						<span class="tit">{$image.image_desc}</span>
-						<span class="cover-all"></span>	
-					</a>
-				</li>
+			 	{foreach $template as $image}
+				{if $image@index >= 5}
+					<li class="photo-item">
+						<a href="###">
+							<img src="__PUBLIC__/img/uploads/{$image.image_url}" width="164" height="164" class="js-img">
+						</a>
+						<a href="##用户id" class="tit" target="_blank">{$user_info[$image.user_id]['name']}</a>
+						<a href="##like" class="like"></a>
+					</li>
+				{/if}
 				{/foreach}
 			</ul>
+			{if count($template) > 6}
 			<div class="mh-ui-btn-more">
 				<a href="##"><span class="mh-ui-btn-txt" data-html="更多照片&gt;&gt;">更多照片&gt;&gt;</span></a>		
 			</div>
+			{/if}
 		</div>
 	{/foreach}
 	</div>
@@ -362,7 +328,13 @@ a:hover{
 {/foreach}
 	<div id="footer">
 		<a class="scrollUp">返回顶部</a>
-		<p>Copyright&copy;Meicry</p>
+		<p>Copyright&copy;五碗牛肉面</p>
+	</div>
+	<div class="cover-all-wrap js-cover-all-wrap">
+		<div class="cover-cont js-cover-cont">
+			<img src="" class="img-big"/>
+		</div>
+		<div class="cover-mask"></div>
 	</div>
 </div>
 </body>
@@ -423,29 +395,70 @@ _loader.use('jquery',function(){
 			}
 		});
 
-		//返回顶部
-		var elem = $(".scrollUp"),
-			height = $(window).height(),
-			scrollTimer = null;
-		
-		$(window).on("scroll", function () {
-			if(scrollTimer){
-				clearTimeout(scrollTimer);
+		//点赞
+		$('.like', $context).on('click',function(e){
+			e.preventDefault();
+
+			var id = $(this).data('id'),
+			that = $(this);
+			
+			if(!$(this).hasClass('likedIt')){
+				$.ajax({
+					 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+					 success: function(){
+					    that.addClass('likedIt');
+					}
+				});
+			}else{
+				return;
 			}
-			scrollTimer = setTimeout(function(){
-				var top = $(document).scrollTop();
-				
-				if(top > 300){
-					elem.show();
-				}else{
-					elem.hide();
-				}
-			},200);
 		});
-		//定义返回顶部点击向上滚动的动画
-		$(".scrollUp").click(function(){
-			console.log($('html, body'));
-			$('html, body').animate({scrollTop:0},200);
+
+		//sub-nav切换
+		$('.js-sub-nav-item').on('click',function(){
+			var subNavs =  $('.js-sub-nav-item'),
+				tpls = $('.js-tpl-list'),
+				index = $(this).index();
+			subNavs.removeClass('sub-nav-active');
+			tpls.hide();
+
+			$(this).addClass('sub-nav-active');
+			tpls.eq(index).show();
+		});
+
+		//放大图
+		var $cover = $('.js-cover-all-wrap',$context),
+			$coverCont = $('.js-cover-cont',$context);
+
+		function computWH(){
+			var clientWidth = $(window).width() > document.body.clientWidth ? $(window).width() : document.body.clientWidth,
+				clientHeight = $(window).height() > document.body.clientHeight ? $(window).height() : document.body.clientHeight;
+			var contLeft = (clientWidth - 723) / 2;
+			$cover.css({
+					"width" :clientWidth,
+					"height" : clientHeight
+				});
+			$coverCont.css({
+					"left" :contLeft
+				});
+			$('img',$coverCont).css({
+					"height": $(window).height()-50
+				});
+		}
+		computWH();
+
+		$('.js-img').on('click',function(e){
+			e.preventDefault();
+			var smallsrc = $(this).attr('src');
+
+			$('img',$coverCont).attr('src',smallsrc);
+			var imgH = $('img',$coverCont).height();
+			computWH(imgH);
+			$cover.show();
+			$(window).on('resize',computWH);
+		});
+		$cover.on('click',function(){
+			$cover.hide();
 		});
 });
 

@@ -7,6 +7,9 @@
 <script src="http://s2.qhimg.com/!827a72ed/_360so_ob_loader.js"></script>
 <script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
 <style>
+body{
+	background: #dce9e7;
+}
 .back{
 	position: absolute;
 	right: 20px;
@@ -23,9 +26,6 @@
 	width: 600px;
 	margin: 0 auto;
 }
-#owner{
-	background: #dce9e7;
-}
 .aside{
 	position: fixed;
 	top: 0;
@@ -36,6 +36,7 @@
 }
 .aside .nav,
 .post-info .nav{
+	display: block;
 	width: 60px;
 	height: 60px;
 	background: #fff;
@@ -69,7 +70,9 @@
 	width: 60px;
 }
 .post-info .nav{
-	background: yellow;
+	background: #C3F0C7;
+	border: 1px solid #999;
+	text-align: center;
 }
 .post-bd{
 	float: right;
@@ -83,8 +86,9 @@
 	overflow: hidden;
 }
 .post-info .nav-small{
-	width: 40px;
-	height: 40px;
+	display: block;
+	width: 50px;
+	height: 50px;
 }
 .post-bd p{
 	text-align: left;
@@ -101,13 +105,13 @@
 	margin-right: 5px;
 	text-align: center;
 }
-.post-bd .photo-share{
+.post-bd .photo-del{
 	float: right;
 }
-.post-bd a.photo-share{
+.post-bd a.photo-del{
 	color: #666;
 }
-.post-bd a.photo-share:hover{
+.post-bd a.photo-del:hover{
 	color: #7594b3;
 }
 .cover-all-wrap{
@@ -127,18 +131,66 @@
 }
 .cover-cont{
 	z-index: 10;
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: 10px;
 	width: 723px;
 	overflow: hidden;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.img-big-info{
-	width: 100%;
-	height: 100px;
-	background: yellow;
+.share{
+	position: relative;
+}
+.share:hover .share-icons-wrap{
+	display: block;
+}
+.share-icons-wrap{
+	display: none;
+}
+.share-icon{
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin-bottom: 10px;
+	text-indent: -9999px;
+	background: url('__PUBLIC__/img/icons24.png') no-repeat 0 0;
+}
+.share-wx{
+
+}
+.share-weibo{
+	top: 50px;
+	background-position: -200px 0;
+}
+.share-qzone{
+	top: 100px;
+	background-position: -300px 0;
+}
+.share-wx:hover{
+	background-position: 0px -89px;
+}
+.share-weibo:hover{
+	background-position: -200px -89px;
+}
+.share-qzone:hover{
+	background-position: -300px -89px;
+}
+.like{
+	display: block;
+	width: 40px;
+	height: 40px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: url('__PUBLIC__/img/like.png') no-repeat left center;
+	background-size: 40px;
+}
+.like:hover,
+.likedIt{
+	background: url('__PUBLIC__/img/liked.png') no-repeat left center;
+	background-size: 40px;
 }
 </style>
 </head>
@@ -146,11 +198,11 @@
 <div id="owner">
 	<div class="aside">
 		<div class="nav">
-			<img src="__PUBLIC__/img/user/{$user_info.icon}" />
+			<a href="__APP__/Index/owner?user_id={$user_info_session.id}"><img src="__PUBLIC__/img/user/{$user_info_session.icon}" /></a>
 		</div>
-		<div class="nav">
+		<a href="__APP__/Index/getImageLiked" class="nav">
 			赞过的照片
-		</div>
+		</a>
 		<div class="nav">
 			个人设置
 		</div>
@@ -158,7 +210,7 @@
 			主题投稿
 		</div>
 	</div>
-	<a href="##home" class="back">返回首页</a>
+	<a href="http://127.0.0.1/meicry2/meicry/" class="back">返回首页</a>
 	<div class="top owner-bd">
 		<h1>{$user_info.name}</h1>
 	</div>
@@ -166,22 +218,31 @@
 		<ol>
 		{foreach $image_info as $value}
 			<li class="post-item gclearfix">
-				<div class="post-info">
-					<div class="nav">点赞</div>
-					<div class="nav nav-small">分享</div>
-				</div>
+				<ul class="post-info">
+
+					<li class="nav"><a href="##like" class="like  js-like {if $value['imageInfo']['liked']==1 } likedIt {/if}" data-id="{$value['imageInfo']['id']}">点赞</a></li>
+
+					<li class="share js-share">
+						<a href="##share" class="nav nav-small">分享</a>
+							
+						<ul class="share-icons-wrap js-share-icons-wrap">
+							<li><a herf="##" target="_blank" class="share-icon share-wx js-wx">微信</a></li>
+							<li><a herf="##" target="_blank" class="share-icon share-weibo js-weibo">新浪微博</a></li>
+							<li><a herf="##" target="_blank" class="share-icon share-qzone js-qzone">qq空间</a></li>
+						</ul>
+					</li>
+				</ul>
+
 				<div class="post-bd">
 					<a href="####" target="_blank" class="img-wrap">
 						<img src="__PUBLIC__/img/uploads/{$value['imageInfo']['image_url']}" width="556" class="js-img"/>
 					</a>
 					<p class="gclearfix">
-						<span class="theme-info photo-tips">{$value['themeInfo']['name']}</span>
-						<span class="photo-tips">{$value['imageInfo']['updated_at']}</span>
-						<span><a href="##share" class="photo-share photo-tips" data-id="{$value['imageInfo']['id']}"> 删除</a></span>
+						<span class="theme-info ">{$value['themeInfo']['name']}</span>
+						<span class="theme-info ">{$value['userInfo']['name']}</span>
+						<span class="">{$value['imageInfo']['updated_at']}</span>
+						<span><a href="##del" class="photo-del js-del" data-id="{$value['imageInfo']['id']}"> 删除</a></span>
 					</p>
-				</div>
-				<div class="share-cont">
-					
 				</div>
 			</li>
 		{/foreach}
@@ -195,7 +256,7 @@
 	</div>
 	<div class="cover-all-wrap js-cover-all-wrap">
 		<div class="cover-cont js-cover-cont">
-			<img src="__PUBLIC__/img/uploads/photo1.png" class="img-big"/>
+			<img src="" class="img-big"/>
 		</div>
 		<div class="cover-mask"></div>
 	</div>
@@ -219,16 +280,64 @@ _loader.use('jquery, scrollUp',function(){
 		$coverCont.css({
 				"left" :contLeft
 			});
+		$('img',$coverCont).css({
+				"height": $(window).height()-50
+			});
 	}
 	computWH();
+
 	$('.js-img').on('click',function(e){
 		e.preventDefault();
-		computWH();
+		var smallsrc = $(this).attr('src');
+
+		$('img',$coverCont).attr('src',smallsrc);
+		var imgH = $('img',$coverCont).height();
+		computWH(imgH);
 		$cover.show();
 		$(window).on('resize',computWH);
 	});
 	$cover.on('click',function(){
 		$cover.hide();
+	});
+
+
+	$('.js-share').hover(function(){
+		$('.js-share-icons-wrap').fadeIn('10000').css("display", "block");;
+	},function(){
+		$('.js-share-icons-wrap').fadeOut('5000').hide(); 
+	});
+
+	$('.js-del').on('click',function(e){
+		e.preventDefault();
+
+		var id = $(this).data('id'),
+			that = $(this);
+
+		$.ajax({
+			 url: "delImageById?id="+id,
+			 success: function(){
+			    that.parents('.post-item').remove();
+			}
+		});
+	});
+
+	//点赞
+	$('.js-like', $context).on('click',function(e){
+		e.preventDefault();
+
+		var id = $(this).data('id'),
+		that = $(this);
+		
+		if(!$(this).hasClass('likedIt')){
+			$.ajax({
+				 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+				 success: function(){
+				    that.addClass('likedIt');
+				}
+			});
+		}else{
+			return;
+		}
 	});
 });
 </script>

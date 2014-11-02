@@ -9,4 +9,9 @@ class UserModel extends Model {
 		$ret = $this->find($userId);
 		return $ret;
 	}
+	public function getUserInfoByName($name){
+		
+		$ret = $this->where("name='$name'")->select();
+		return $ret;
+	}
 }
