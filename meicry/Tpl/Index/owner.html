@@ -241,7 +241,9 @@ body{
 						<span class="theme-info ">{$value['themeInfo']['name']}</span>
 						<span class="theme-info ">{$value['userInfo']['name']}</span>
 						<span class="">{$value['imageInfo']['updated_at']}</span>
+						{if $value['userInfo']['id']==$user_info_session.id}
 						<span><a href="##del" class="photo-del js-del" data-id="{$value['imageInfo']['id']}"> 删除</a></span>
+						{/if}
 					</p>
 				</div>
 			</li>

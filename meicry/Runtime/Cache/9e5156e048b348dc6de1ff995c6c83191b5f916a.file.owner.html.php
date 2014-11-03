@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 22:43:05
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-03 10:32:10
          compiled from "./Tpl\Index\owner.html" */ ?>
 <?php /*%%SmartyHeaderCode:196365453a7c7ad0265-43826280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9e5156e048b348dc6de1ff995c6c83191b5f916a' => 
     array (
       0 => './Tpl\\Index\\owner.html',
-      1 => 1414939357,
+      1 => 1414981927,
       2 => 'file',
     ),
   ),
@@ -281,8 +281,10 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 </span>
 						<span class=""><?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['updated_at'];?>
 </span>
+						<?php if ($_smarty_tpl->tpl_vars['value']->value['userInfo']['id']==$_smarty_tpl->tpl_vars['user_info_session']->value['id']){?>
 						<span><a href="##del" class="photo-del js-del" data-id="<?php echo $_smarty_tpl->tpl_vars['value']->value['imageInfo']['id'];?>
 "> 删除</a></span>
+						<?php }?>
 					</p>
 				</div>
 			</li>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 22:42:59
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-03 10:23:17
          compiled from "./Tpl\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:319565453a772d450e6-44870550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ebdb8cf9971e5370f7097a66f3b8b0b1e1bd504' => 
     array (
       0 => './Tpl\\Index\\index.html',
-      1 => 1414939295,
+      1 => 1414981392,
       2 => 'file',
     ),
   ),
@@ -272,7 +272,7 @@ body{
 				<a href="##" class="nav-item nav-active">首页</a>
 				<a href="__APP__/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_session_id']->value;?>
 " class="nav-item" target="_blank">个人主页</a>
-				<a href="##" class="nav-item">xxxx</a>
+				<a href="__APP__/Login/logOut" class="nav-item">退出</a>
 			</nav>
 		</div>
 	</header>
@@ -413,12 +413,12 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 	</div>
 </div>
 
-<form method ='post' action="__APP__/Api/upload1" enctype="multipart/form-data">
+<!-- <form method ='post' action="__APP__/Api/upload1" enctype="multipart/form-data">
 <input type='file'  name='photo' />
 <input type='text'  name='user_id' value='1'/>
 <input type='text'  name='template'  value='1' />
 <input type="submit" value="ok"/>
-</form>
+</form> -->
 </body>
  
 <script>

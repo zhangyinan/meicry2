@@ -86,7 +86,7 @@ class IndexAction extends CommonAction {
     public function dianliked(){
         $userId = $_SESSION["user_id"];
         $imageId = $_REQUEST['id'];
-       dump($imageId);
+      
         $obj = new LikeModel();
         $obj->dianlike( $userId,$imageId);
       
@@ -149,8 +149,11 @@ class IndexAction extends CommonAction {
     	foreach ($res as $value){
     		$image_id = $value['image_id'];
     		$imageInfo =  $obj->getImageInfoById($image_id);
-    		$user_id = $value['user_id'];
+
+    		$user_id = $imageInfo['user_id'];
+
     		$userInfo = $obj2 ->getUserInfoById($user_id);
+            
     		$allLikedTmp = array();
     		$tmpId = $imageInfo['template'];
     		$allLikedTmp["imageInfo"] = $imageInfo;
@@ -161,7 +164,8 @@ class IndexAction extends CommonAction {
     		$allLikedTmp["themeInfo"] =$obj4->getThemeInfoByThemeId($themeId);
     		$allLiked[] = $allLikedTmp;
     	}
-    	$obj1 = new UserModel();
+        
+        $obj1 = new UserModel();
     	$ress = $obj1->getUserInfoById($userId);
 		$this->assign("user_info_session",$ress);
     	$this->assign("image_info",$allLiked);
