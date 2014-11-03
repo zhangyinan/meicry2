@@ -288,3 +288,6 @@ INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
 SQL: SHOW COLUMNS FROM `like` [ RunTime:0.004000s ]
 SQL: INSERT INTO `like` (`image_id`,`user_id`,`update_time`) VALUES ('8',2,'2014-11-02 19:00:09') [ RunTime:0.029003s ]
 
+[ 2014-11-02T22:23:05+08:00 ] 127.0.0.1 /meicry2/meicry/index.php/Api/upload
+ERR: Unable to load template file 'nkPHP/Tpl/dispatch_jump.tpl'
+

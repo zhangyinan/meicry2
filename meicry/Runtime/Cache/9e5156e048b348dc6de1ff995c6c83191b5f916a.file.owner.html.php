@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 18:59:54
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 22:43:05
          compiled from "./Tpl\Index\owner.html" */ ?>
 <?php /*%%SmartyHeaderCode:196365453a7c7ad0265-43826280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9e5156e048b348dc6de1ff995c6c83191b5f916a' => 
     array (
       0 => './Tpl\\Index\\owner.html',
-      1 => 1414925992,
+      1 => 1414939357,
       2 => 'file',
     ),
   ),
@@ -240,7 +240,7 @@ body{
 			主题投稿
 		</div>
 	</div>
-	<a href="http://127.0.0.1/meicry2/meicry/" class="back">返回首页</a>
+	<a href="__APP__/Index" class="back">返回首页</a>
 	<div class="top owner-bd">
 		<h1><?php echo $_smarty_tpl->tpl_vars['user_info']->value['name'];?>
 </h1>
@@ -371,7 +371,7 @@ _loader.use('jquery, scrollUp',function(){
 		
 		if(!$(this).hasClass('likedIt')){
 			$.ajax({
-				 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+				 url: "__APP__/index.php/Index/dianliked?id="+id,
 				 success: function(){
 				    that.addClass('likedIt');
 				}

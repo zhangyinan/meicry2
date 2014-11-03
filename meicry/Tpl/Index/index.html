@@ -236,7 +236,7 @@ body{
 			</h2>
 			<nav class="main-nav">
 				<a href="##" class="nav-item nav-active">首页</a>
-				<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id={$user_session_id}" class="nav-item" target="_blank">个人主页</a>
+				<a href="__APP__/Index/owner?user_id={$user_session_id}" class="nav-item" target="_blank">个人主页</a>
 				<a href="##" class="nav-item">xxxx</a>
 			</nav>
 		</div>
@@ -294,7 +294,7 @@ body{
 						<a href="###">
 							<img src="__PUBLIC__/img/uploads/{$image.image_url}" width="164" height="164" class="js-img">
 						</a>
-						<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id={$user_info[$image.user_id]['id']}" class="tit" target="_blank">{$user_info[$image.user_id]['name']}</a>
+						<a href="__APP__/Index/owner?user_id={$user_info[$image.user_id]['id']}" class="tit" target="_blank">{$user_info[$image.user_id]['name']}</a>
 						<!--只有登录的了用户才可以看到点赞的标志-->
 						<!--点赞加1时，就记录已被该用户喜欢了-->
 						<!--下一次加载时需要读状态，当前用户是不是已经喜欢了-->
@@ -337,6 +337,13 @@ body{
 		<div class="cover-mask"></div>
 	</div>
 </div>
+
+<form method ='post' action="__APP__/Api/upload1" enctype="multipart/form-data">
+<input type='file'  name='photo' />
+<input type='text'  name='user_id' value='1'/>
+<input type='text'  name='template'  value='1' />
+<input type="submit" value="ok"/>
+</form>
 </body>
  {literal}
 <script>
@@ -404,7 +411,7 @@ _loader.use('jquery',function(){
 			
 			if(!$(this).hasClass('likedIt')){
 				$.ajax({
-					 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+					 url: "__APP__/Index/dianliked?id="+id,
 					 success: function(){
 					    that.addClass('likedIt');
 					}

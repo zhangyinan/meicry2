@@ -210,7 +210,7 @@ body{
 			主题投稿
 		</div>
 	</div>
-	<a href="http://127.0.0.1/meicry2/meicry/" class="back">返回首页</a>
+	<a href="__APP__/Index" class="back">返回首页</a>
 	<div class="top owner-bd">
 		<h1>{$user_info.name}</h1>
 	</div>
@@ -330,7 +330,7 @@ _loader.use('jquery, scrollUp',function(){
 		
 		if(!$(this).hasClass('likedIt')){
 			$.ajax({
-				 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+				 url: "__APP__/index.php/Index/dianliked?id="+id,
 				 success: function(){
 				    that.addClass('likedIt');
 				}

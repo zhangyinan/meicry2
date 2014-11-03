@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 19:01:51
+<?php /* Smarty version Smarty-3.1.6, created on 2014-11-02 22:42:59
          compiled from "./Tpl\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:319565453a772d450e6-44870550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ebdb8cf9971e5370f7097a66f3b8b0b1e1bd504' => 
     array (
       0 => './Tpl\\Index\\index.html',
-      1 => 1414926108,
+      1 => 1414939295,
       2 => 'file',
     ),
   ),
@@ -270,7 +270,7 @@ body{
 			</h2>
 			<nav class="main-nav">
 				<a href="##" class="nav-item nav-active">首页</a>
-				<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_session_id']->value;?>
+				<a href="__APP__/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_session_id']->value;?>
 " class="nav-item" target="_blank">个人主页</a>
 				<a href="##" class="nav-item">xxxx</a>
 			</nav>
@@ -358,7 +358,7 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 							<img src="__PUBLIC__/img/uploads/<?php echo $_smarty_tpl->tpl_vars['image']->value['image_url'];?>
 " width="164" height="164" class="js-img">
 						</a>
-						<a href="http://127.0.0.1/meicry2/meicry/index.php/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['id'];?>
+						<a href="__APP__/Index/owner?user_id=<?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['id'];?>
 " class="tit" target="_blank"><?php echo $_smarty_tpl->tpl_vars['user_info']->value[$_smarty_tpl->tpl_vars['image']->value['user_id']]['name'];?>
 </a>
 						<!--只有登录的了用户才可以看到点赞的标志-->
@@ -412,6 +412,13 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 		<div class="cover-mask"></div>
 	</div>
 </div>
+
+<form method ='post' action="__APP__/Api/upload1" enctype="multipart/form-data">
+<input type='file'  name='photo' />
+<input type='text'  name='user_id' value='1'/>
+<input type='text'  name='template'  value='1' />
+<input type="submit" value="ok"/>
+</form>
 </body>
  
 <script>
@@ -479,7 +486,7 @@ _loader.use('jquery',function(){
 			
 			if(!$(this).hasClass('likedIt')){
 				$.ajax({
-					 url: "http://127.0.0.1/meicry2/meicry/index.php/Index/dianliked?id="+id,
+					 url: "__APP__/Index/dianliked?id="+id,
 					 success: function(){
 					    that.addClass('likedIt');
 					}
